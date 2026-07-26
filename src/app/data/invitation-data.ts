@@ -8,7 +8,7 @@ export const INVITATION_DATA: InvitationData = {
   venue: 'Mejia',
   dressCode: 'Formal / Elegante',
   message: 'Con inmensa alegría te invito a celebrar este logro tan importante en mi vida. Tu presencia hará de este día algo inolvidable.',
-  whatsappGroupUrl: 'https://chat.whatsapp.com/CzQTi3bbXxeCMgHNguFpkj?s=sw&p=i&mlu=0',
+  whatsappGroupUrl: 'https://chat.whatsapp.com/LjFLzETfab36jyKpKIXBhq?s=sh&p=i&mlu=0',
   whatsappMessage: 'Confirmo mi asistencia!!',
   googleFormUrl: '',
   galleryImages: [
