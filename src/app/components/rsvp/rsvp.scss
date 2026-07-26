@@ -1,0 +1,32 @@
+.rsvp {
+  h2 {
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+  }
+
+  &__button {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.9rem 2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    &--whatsapp {
+      background: #25d366;
+      color: #0e0e10;
+    }
+
+    &--form {
+      background: var(--color-primary);
+      color: var(--color-bg);
+    }
+  }
+}

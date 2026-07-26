@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos globales - Invitación de graduación */
+
+:root {
+  --color-bg: #5c1212;
+  --color-primary: #d4af37; // dorado
+  --color-primary-soft: #e8cf80;
+  --color-text: #f5f0e6;
+  --color-secondary: #741414;
+  --font-title: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+h1, h2 {
+  font-family: var(--font-title);
+}
+
+section {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 5rem 3rem;
+  }
+}

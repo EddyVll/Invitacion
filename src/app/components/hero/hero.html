@@ -1,0 +1,31 @@
+<section class="hero">
+  <div class="hero__card">
+
+
+    <p class="hero__eyebrow">
+      Han sido años de mucha dedicación, desvelos y pacientes, 
+      pero finalmente lo conseguí. </p>
+    <p class="hero__eyebrowp2">Te invito a reunirnos
+      para compartir juntos una noche de celebración, buena música y excelente compañía.</p>
+    
+    <div class="hero__divider">
+      <span class="hero__divider-line"></span>
+      <span class="hero__divider-dot">◆</span>
+      <span class="hero__divider-line"></span>
+    </div>
+
+    <p class="hero__career">{{ data().career }}</p>
+    <h1 class="hero__name">{{ data().graduateName }}</h1>
+    <br>
+    <br>
+    <div class="hero__divider">
+      <span class="hero__divider-line"></span>
+      <span class="hero__divider-dot">◆</span>
+      <span class="hero__divider-line"></span>
+    </div>
+
+    <p class="hero__date">{{ data().date }}</p>
+
+    <button class="hero__cta" (click)="scrollToRsvp()">Confirmar asistencia</button>
+  </div>
+</section>

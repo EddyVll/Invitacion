@@ -1,0 +1,67 @@
+<section class="details">
+
+
+  <div class="details__frame">
+    <svg class="details__laurel details__laurel--left" viewBox="0 0 60 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <line x1="30" y1="10" x2="30" y2="290" stroke="currentColor" stroke-width="1.5"/>
+      <g fill="currentColor">
+        <ellipse cx="18" cy="40"  rx="11" ry="5" transform="rotate(-35 18 40)"/>
+        <ellipse cx="42" cy="75"  rx="11" ry="5" transform="rotate(35 42 75)"/>
+        <ellipse cx="18" cy="110" rx="11" ry="5" transform="rotate(-35 18 110)"/>
+        <ellipse cx="42" cy="145" rx="11" ry="5" transform="rotate(35 42 145)"/>
+        <ellipse cx="18" cy="180" rx="11" ry="5" transform="rotate(-35 18 180)"/>
+        <ellipse cx="42" cy="215" rx="11" ry="5" transform="rotate(35 42 215)"/>
+        <ellipse cx="18" cy="250" rx="11" ry="5" transform="rotate(-35 18 250)"/>
+      </g>
+    </svg>
+
+    <div class="details__list">
+      <h2 class="details__title">Detalles del evento</h2>
+      <br>
+      <div class="details__item">
+        <span class="details__icon">📅</span>
+        <p class="details__label">Fecha:</p>
+        <p class="details__value">{{ data().date }}</p>
+      </div>
+
+      <div class="details__item">
+        <span class="details__icon">🕖</span>
+        <p class="details__label">Hora:</p>
+        <p class="details__value">{{ data().time }}</p>
+      </div>
+
+      <div class="details__item">
+        <span class="details__icon">🏛️</span>
+        <p class="details__label">Lugar:</p>
+        <p class="details__value">{{ data().venue }}</p>
+      </div>
+
+      @if (data().dressCode) {
+        <div class="details__item">
+          <span class="details__icon">👔</span>
+          <p class="details__label">Código de vestimenta:</p>
+          <p class="details__value">{{ data().dressCode }}</p>
+        </div>
+      }
+    </div>
+
+    <svg class="details__laurel details__laurel--right" viewBox="0 0 60 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <line x1="30" y1="10" x2="30" y2="290" stroke="currentColor" stroke-width="1.5"/>
+      <g fill="currentColor">
+        <ellipse cx="42" cy="40"  rx="11" ry="5" transform="rotate(35 42 40)"/>
+        <ellipse cx="18" cy="75"  rx="11" ry="5" transform="rotate(-35 18 75)"/>
+        <ellipse cx="42" cy="110" rx="11" ry="5" transform="rotate(35 42 110)"/>
+        <ellipse cx="18" cy="145" rx="11" ry="5" transform="rotate(-35 18 145)"/>
+        <ellipse cx="42" cy="180" rx="11" ry="5" transform="rotate(35 42 180)"/>
+        <ellipse cx="18" cy="215" rx="11" ry="5" transform="rotate(-35 18 215)"/>
+        <ellipse cx="42" cy="250" rx="11" ry="5" transform="rotate(35 42 250)"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="details__divider">
+    <span class="details__divider-line"></span>
+    <span class="details__divider-dot">◆</span>
+    <span class="details__divider-line"></span>
+  </div>
+</section>

@@ -1,0 +1,89 @@
+.details {
+  padding: .5rem 1.5rem;
+  padding-top: 3rem;
+
+  &__divider {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    margin: 0 auto 2rem;
+    color: var(--color-primary);
+  }
+
+  &__divider-line {
+    flex: 1;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.5;
+  }
+
+  &__divider-dot {
+    font-size: 1rem;
+  }
+
+  &__frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  &__laurel {
+    width: 40px;
+    height: 220px;
+    color: var(--color-primary);
+    flex-shrink: 0;
+    display: none; // oculto en móvil para no saturar
+  }
+
+  &__list {
+    flex: 1;
+    max-width: 380px;
+  }
+
+  &__title {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: left;
+    gap: 0.75rem;
+    justify-content: left;
+    margin-bottom: 1.1rem;
+    text-align: left;
+  }
+
+  &__icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  &__label {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  &__value {
+    color: var(--color-text);
+    font-size: 0.95rem;
+    opacity: 0.9;
+  }
+
+  // Desktop: se muestran las espigas a los lados
+  @media (min-width: 700px) {
+    &__laurel {
+      display: block;
+    }
+  }
+}

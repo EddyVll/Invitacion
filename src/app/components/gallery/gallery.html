@@ -1,0 +1,14 @@
+<section class="gallery">
+  <h2>Galería</h2>
+  <div class="gallery__grid">
+    @for (img of images(); track img) {
+      <img [src]="img" (click)="openImage(img)" class="gallery__thumb" alt="Foto de la graduación" />
+    }
+  </div>
+
+  @if (activeImage()) {
+    <div class="gallery__modal" (click)="closeImage()">
+      <img [src]="activeImage()" alt="Vista ampliada" />
+    </div>
+  }
+</section>

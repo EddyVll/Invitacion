@@ -1,0 +1,12 @@
+<section class="rsvp" id="rsvp">
+  <h2>Confirma tu asistencia</h2>
+  <a [href]="data().whatsappGroupUrl" target="_blank" rel="noopener" class="rsvp__button rsvp__button--whatsapp">
+    Confirmar tu asistencia por WhatsApp
+  </a>
+
+  @if (data().googleFormUrl) {
+    <a [href]="data().googleFormUrl" target="_blank" rel="noopener" class="rsvp__button rsvp__button--form">
+      Confirmar por formulario
+    </a>
+  }
+</section>

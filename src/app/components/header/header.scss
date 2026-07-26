@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: .5rem;
+  text-align: center; /* Centra el contenido en bloque o inline-flex */
+  background: linear-gradient(to bottom, rgb(66, 13, 13));
+
+  &__monogram {
+    display: inline-flex; 
+    align-items: center; /* Centra verticalmente el texto y la imagen */
+    justify-content: center;
+    gap: 15px; /* Espacio de separación entre el texto y el logo */
+    
+    font-family: var(--font-title);
+    color: var(--color-primary);
+    letter-spacing: 0.2rem;
+    font-size: 1.75rem;
+  }
+
+  &__logo {
+    width: 35px;
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block;
+  }
+}

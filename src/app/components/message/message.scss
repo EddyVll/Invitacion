@@ -1,0 +1,11 @@
+.message {
+  &__quote {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: var(--font-title);
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--color-primary-soft);
+  }
+}
