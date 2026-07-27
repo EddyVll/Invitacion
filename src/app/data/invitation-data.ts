@@ -4,7 +4,7 @@ export const INVITATION_DATA: InvitationData = {
   graduateName: 'Dhamar Elisa Villafuerte Chinga',
   career: 'Doctora:',
   date: 'Sábado, 1 de Agosto 2026',
-  time: '7:00 PM',
+  time: '6:00 PM',
   venue: 'Mejia',
   dressCode: 'Formal',
   message: 'Con inmensa alegría te espero para celebrar este logro tan importante en mi vida. Tu presencia hará de este día algo inolvidable.',
